@@ -8,7 +8,8 @@ export const metadata: Metadata = {
     "Browse essential security controls and practical recommendations for web projects.",
 }
 
-export default function ControlsPage() {
+export default async function ControlsPage() {
+  await new Promise((resolve) => setTimeout(resolve, 1500))
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <h1 className="mb-4 text-3xl font-bold">Security Controls</h1>
